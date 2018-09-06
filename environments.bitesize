@@ -1,7 +1,7 @@
 project: chethiya
 environments:
-  - name: production
-    namespace: spring-dev
+  - name: dev
+    namespace: chethiya-dev
     deployment:
       method: rolling-upgrade
     services:
