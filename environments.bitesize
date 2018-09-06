@@ -1,4 +1,4 @@
-project: spring
+project: chethiya
 environments:
   - name: production
     namespace: spring-dev
