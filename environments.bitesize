@@ -11,7 +11,7 @@ environments:
         ssl: "false"
         replicas: 2
   - name: prd
-    namespace: chethiya-dev
+    namespace: chethiya-prd
     deployment:
       method: rolling-upgrade
     services:
