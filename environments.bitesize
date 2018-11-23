@@ -15,12 +15,13 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "nft"
-          - name: hapi_host
-            value: "auth.nft.pulse.pearson.com"
-          - name: hapi_port
-            value: "80"
           - name: userSession_defaultProductName
             value: "Pulse Application"
           - name: userSession_defaultUserSessionLimit
             value: 5
+          - name: hapi_host
+            value: "auth.nft.pulse.pearson.com"
+          - name: hapi_port
+            value: "80"
+          
  
