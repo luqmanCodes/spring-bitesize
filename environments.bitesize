@@ -10,13 +10,4 @@ environments:
         port: 8080
         ssl: "false"
         replicas: 2
-  - name: prd
-    namespace: chethiya-prd
-    deployment:
-      method: rolling-upgrade
-    services:
-      - name: spring-app
-        external_url: chethiya-spring-prd.prsn.io
-        port: 8080
-        ssl: "false"
-        replicas: 2  
+ 
