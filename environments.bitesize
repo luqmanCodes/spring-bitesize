@@ -15,13 +15,113 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "nft"
-          - name: userSession_defaultProductName
-            value: "Pulse Application"
-          - name: userSession_defaultUserSessionLimit
-            value: 5
           - name: hapi_host
             value: "auth.nft.pulse.pearson.com"
           - name: hapi_port
             value: "80"
+          - name: logger_filename
+            value: "/proc/self/fd/1"
+          - name: logger_level
+            value: "info"
+          - name: pulseapi_uri
+            value: "http://api.pulse-nft.svc.cluster.local"
+          - name: gabapi_uri
+            value: "http://broker.pulseauth-nft.svc.cluster.local"
+          - name: swagger_baseURL
+            value: "http://broker.pulseauth-nft.svc.cluster.local"
+          - name: services_forgerock_idAMBaseURL
+            value: "https://iam-stage.pearson.com/auth/json/pearson/"
+          - name: services_forgerock_XOpenAMUsername
+            value: "pulseadmin"
+          - name: services_forgerock_XOpenAMPassword
+            value: "Password1$"
+          - name: services_forgerock_sessionKeyName
+            value: "PearsonExtSTGSSOSession"
+          - name: services_forgerock_auth
+            value: "authenticate"
+          - name: services_forgerock_logout
+            value: "sessions"
+          - name: services_forgerock_tokenValid
+            value: "sessions"
+          - name: services_forgerock_create
+            value: "users/?_action=create"
+          - name: services_forgerock_bypass
+            value: "OFF"
+          - name: crypto_password
+            value: "2^k80aFAJRjS5!7U"
+          - name: gabapi_token
+            value: "0Iz6jo719quU503lX33zfQ=="
+          - name: moodle_service
+            value: "webservice/rest/server.php?"
+          - name: moodle_wstoken
+            value: "d204fed1145aaccf07812b89918aa284"
+          - name: moodle_wsfunction_createschool
+            value: "core_course_create_categories"
+          - name: moodle_provisionUrl
+            value: "http://moodle-prov.pulse-nft.svc.cluster.local/createtenant"
+          - name: moodle_activeUrl
+            value: "http://moodle-apache.pulse-nft.svc.cluster.local/moodle"
+          - name: VAULT_SKIP_VERIFY
+            value: "true"
+          - name: VAULT_ADDR
+            value: "http://vault.kube-system.svc.cluster.local:8200"
+          - secret: VAULT_TOKEN
+            value: vault-pulseauth-nft-read
+          - secret: CONSUL_TOKEN
+            value: consul-pulseauth-nft-write
+          - name: singlesignon_config
+            value: "config/sso/stage.json"
+          - name: mac_host
+            value: "auth.nft.pulse.pearson.com"
+          - name: mac_port
+            value: "80"
+          - name: ARS_app
+            value: "590869abb68518d22b0b5f29"
+          - name: ARS_enable
+            value: "true"
+          - name: WEB_MEMORY
+            value: "2048"
+          - name: newrelic_appname
+            value: US1-PULSE-GAB-NFT
+          - name: newrelic_key
+            value: "c877c654b8f177c0be37490c2031686ebbfdcaf3"
+          - name: ars_url
+            value: http://ars-nft.pearson-intl.com
+          - name: ars_tag
+            value: pulse
+          - name: ars_hawkId
+            value: "355d60a5-d7f8-4f4b-b662-24f251c5e268"
+          - name: ars_hawkKey
+            value: "c7614e3a-a52b-4cea-8324-99e3a3377f74"
+          - name: cwt_json
+            value: "http://caas.pearson-intl.com/appconfig/s3path?folder=pulse-lms-dev/cwt/config&configfile=cwt-config-stage.json&version=v2"
+          - name: cwt_cacheEnabled
+            value: true
+          - name: cwt_ttl
+            value: 86400
+          - name: TenantService_url
+            value: "http://tenants-api-stg.us.pearson-intl.com"
+          - name: TenantService_hawkId
+            value: "9287e457-61ae-4085-a30d-4ddc99e06368"
+          - name: TenantService_hawkSecret
+            value: "52951401-947d-4242-bbb4-c3f8a864289f"
+          - name: TenantService_userPath
+            value: "/user"
+          - name: TenantService_tenantByTagPath
+            value: "/v1/tenant/tag/{tag}"
+          - name: TenantService_tenantByHawkIdPath
+            value: "/v1/tenant/hawkId/{hawkId}"
+          - name: TenantService_keyByHawkIdPath
+            value: "/v1/authkey/hawkId/{hawkId}"
+          - name: aapi_tag
+            value: pulse
+          - name: aapi_hawkKey
+            value: c7614e3a-a52b-4cea-8324-99e3a3377f74
+          - name: userSession_defaultProductName
+            value: "Pulse Application"
+          - name: userSession_defaultUserSessionLimit
+            value: 5
+          - name: NFT_DUMMY
+            value: "DUMMY-VALUE" 
           
  
