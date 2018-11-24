@@ -33,14 +33,14 @@ environments:
             value: true
           - name: cwt_ttl
             value: 86400
-          - name: aapi_tag
-            value: pulse
-          - name: aapi_hawkKey
-            value: c7614e3a-a52b-4cea-8324-99e3a3377f74
           - name: userSession_defaultProductName
             value: "Pulse Application"
           - name: userSession_defaultUserSessionLimit
             value: 5
+          - name: aapi_tag
+            value: pulse
+          - name: aapi_hawkKey
+            value: c7614e3a-a52b-4cea-8324-99e3a3377f74
           - name: NFT_DUMMY
             value: "DUMMY-VALUE" 
          
