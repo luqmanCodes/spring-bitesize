@@ -67,10 +67,6 @@ environments:
             value: US1-PULSE-GAB-PROD
           - name: ars_url
             value: http://ars.pearson-intl.com
-          - name: userSession_defaultProductName
-            value: "KernelApps"
-          - name: userSession_defaultUserSessionLimit
-            value: 5
           - name: ars_tag
             value: pulse
           - name: cwt_json
@@ -79,6 +75,10 @@ environments:
             value: true
           - name: cwt_ttl
             value: 86400
+          - name: userSession_defaultProductName
+            value: "KernelApps"
+          - name: userSession_defaultUserSessionLimit
+            value: 5
           - name: TenantService_url
             value: "http://tenants-api.us.pearson-intl.com"
           - name: TenantService_hawkId
