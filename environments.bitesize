@@ -4,6 +4,7 @@ environments:
     namespace: chethiya-test-project-dev
     deployment:
       method: rolling-upgrade
+      mode: manual
     services:
       - name: spring-app
         external_url: chethiya-spring.prsn.io
