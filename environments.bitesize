@@ -33,10 +33,6 @@ environments:
             value: "https://iam.pearson.com/auth/json/pearson/"
           - name: services_forgerock_XOpenAMUsername
             value: "pulseadmin"
-          - name: services_forgerock_XOpenAMPassword
-            value: "P@ssw0rd1$"
-          - name: services_forgerock_sessionKeyName
-            value: "PearsonExtSSOSession"
           - name: services_forgerock_auth
             value: "authenticate"
           - name: services_forgerock_logout
@@ -45,10 +41,6 @@ environments:
             value: "sessions"
           - name: services_forgerock_create
             value: "users/?_action=create"
-          - name: crypto_password
-            value: "2^k80aFAJRjS5!7U"
-          - name: gabapi_token
-            value: "0Iz6jo719quU503lX33zfQ=="
           - name: moodle_service
             value: "webservice/rest/server.php?"
           - name: moodle_wstoken
@@ -71,20 +63,12 @@ environments:
             value: "80"
           - name: aapi_tag
             value: pulse
-          - name: aapi_hawkKey
-            value: 24660347-099e-40fd-9650-c186bb646b8e
           - name: newrelic_appname
             value: US1-PULSE-GAB-PROD
-          - name: newrelic_key
-            value: ba12c1c44a2c8160edb516da3b6d2a741483b765
           - name: ars_url
             value: http://ars.pearson-intl.com
           - name: ars_tag
             value: pulse
-          - name: ars_hawkId
-            value: "2b54c38c-66a0-4dcf-949a-132aa829ee84"
-          - name: ars_hawkKey
-            value: "24660347-099e-40fd-9650-c186bb646b8e"
           - name: cwt_json
             value: "http://caas.pearson-intl.com/appconfig/s3path?folder=pulse-lms/cwt/config&configfile=cwt-config.json&version=v2"
           - name: cwt_cacheEnabled
