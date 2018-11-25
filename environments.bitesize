@@ -94,5 +94,9 @@ environments:
             value: "/v1/tenant/hawkId/{hawkId}"
           - name: TenantService_keyByHawkIdPath
             value: "/v1/authkey/hawkId/{hawkId}"
+          - name: TestVal
+            value: 123456
+          - name: gender
+            value: "Male"
          
           
