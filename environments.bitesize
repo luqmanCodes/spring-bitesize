@@ -18,7 +18,11 @@ environments:
           - name: hapi_host
             value: "auth.nft.pulse.pearson.com"
           - name: hapi_port
-            value: "80"
+            value: 80
+          - name: userSession_defaultProductName
+            value: "Pulse Application"
+          - name: userSession_defaultUserSessionLimit
+            value: 5
           - name: logger_filename
             value: "/proc/self/fd/1"
           - name: logger_level
@@ -33,10 +37,6 @@ environments:
             value: true
           - name: cwt_ttl
             value: 86400
-          - name: userSession_defaultProductName
-            value: "Pulse Application"
-          - name: userSession_defaultUserSessionLimit
-            value: 5
           - name: aapi_tag
             value: pulse
           - name: aapi_hawkKey
