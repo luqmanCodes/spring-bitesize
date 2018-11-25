@@ -11,7 +11,7 @@ environments:
         ssl: "false"
         replicas: 2
         env:
-       - name: NODE_ENV
+         - name: NODE_ENV
             value: "paas"
           - name: PAAS_ENV
             value: "prod"
