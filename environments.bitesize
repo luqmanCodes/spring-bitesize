@@ -18,7 +18,6 @@ environments:
       mode: manual
     services:
       - name: spring-app
-        external_url: chethiya-spring.prsn.io
         port: 8080
         ssl: "false"
         replicas: 2
