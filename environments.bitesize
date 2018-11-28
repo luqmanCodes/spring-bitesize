@@ -11,4 +11,16 @@ environments:
         port: 8080
         ssl: "false"
         replicas: 2
+  - name: qa
+    namespace: chethiya-test-project-qa
+    deployment:
+      method: rolling-upgrade
+      mode: manual
+    services:
+      - name: spring-app
+        external_url: chethiya-spring.prsn.io
+        port: 8080
+        ssl: "false"
+        replicas: 2
+       
         
