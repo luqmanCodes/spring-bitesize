@@ -18,7 +18,6 @@ environments:
       mode: manual
     services:
       - name: spring-app
-        port: 8080
         ssl: "false"
         replicas: 2
        
