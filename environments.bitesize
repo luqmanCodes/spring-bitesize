@@ -9,7 +9,7 @@ environments:
       - name: spring-app
         external_url: chethiya-spring.prsn.io
         port: 80
-        replicas: 25
+        replicas: 2
         env:
           - name: NODE_ENV
             value: "paas"
