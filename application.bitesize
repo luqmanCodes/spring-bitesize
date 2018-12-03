@@ -1,12 +1,12 @@
 project: chethiya-test-project
 applications:
-  - name: spring-app
+  - name:  broker
     runtime: ubuntu-jdk8:1.0
     version: "0.1.0"
     dependencies:
-      - name: spring-app
+      - name:  broker
         type: debian-package
         origin:
-          build: spring-app
+          build:  broker
         version: 1.0
     command: "java -jar /app/assignment-service-1.0.0.jar"
