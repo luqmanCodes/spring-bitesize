@@ -6,7 +6,7 @@ environments:
       method: rolling-upgrade
       mode: manual
     services:
-      - name: broker
+      - name: spring-app
         external_url: chethiya-spring.prsn.io
         port: 80
         replicas: 25
