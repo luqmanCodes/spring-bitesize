@@ -10,3 +10,13 @@ applications:
           build: spring-app
         version: 1.0
     command: "java -jar /app/assignment-service-1.0.0.jar"
+  - name: spring-app2
+    runtime: ubuntu-jdk8:1.0
+    version: "0.1.0"
+    dependencies:
+      - name: spring-app
+        type: debian-package
+        origin:
+          build: spring-app
+        version: 1.0
+    command: "java -jar /app/assignment-service-1.0.0.jar"
