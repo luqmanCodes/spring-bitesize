@@ -116,4 +116,6 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "prod"
+          - name: NEW_ENV
+            value: 123456
         
