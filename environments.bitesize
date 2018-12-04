@@ -118,4 +118,6 @@ environments:
             value: "prod"
           - name: NEW_ENV
             value: 123456
+          - name: ABC
+            value: OOP
         
