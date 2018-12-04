@@ -107,4 +107,13 @@ environments:
             value: "/v1/tenant/tag/{tag}"
           - name: TenantService_tenantByHawkIdPath
             value: "/v1/tenant/hawkId/{hawkId}"
+      - name: spring-app2
+        external_url: chethiya-spring.prsn.io
+        port: 80
+        replicas: 2
+        env:
+          - name: NODE_ENV
+            value: "paas"
+          - name: PAAS_ENV
+            value: "prod"
         
