@@ -1,6 +1,6 @@
 project: chethiya-test-project
 components:
-  - name: spring-appABC
+  - name: spring-application
     os: linux
     repository:
       git: git@github.com:chethiya1996/spring-boot.git
