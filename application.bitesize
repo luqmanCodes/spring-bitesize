@@ -4,7 +4,7 @@ applications:
     runtime: ubuntu-jdk8:1.0
     version: "0.1.0"
     dependencies:
-      - name: spring-appdepend
+      - name: spring-appchange
         type: debian-package
         origin:
           build: spring-appBuild
