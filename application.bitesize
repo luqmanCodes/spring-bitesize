@@ -1,6 +1,6 @@
 project: chethiya-test-project
 applications:
-  - name: spring-app
+  - name: spring-appABC
     runtime: ubuntu-jdk8:1.0
     version: "0.1.0"
     dependencies:
