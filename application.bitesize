@@ -8,7 +8,7 @@ applications:
         type: debian-package
         origin:
           build: spring-appBuild
-        version: 1.0
+        version: 3.0
     command: "java -jar /app/assignment-service-1.0.0.jar"
   - name: spring-app2
     runtime: ubuntu-jdk8:1.0
