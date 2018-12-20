@@ -1,7 +1,7 @@
 project: chethiya-test-project
 applications:
   - name: spring-application
-    runtime: ubuntu-jdk8:1.0
+    runtime: ubuntu-httpdfcgi:1.3
     version: "0.1.0"
     dependencies:
       - name: spring-appdepend
