@@ -63,6 +63,10 @@ environments:
             value: "true"
           - name: VAULT_ADDR
             value: "http://vault.kube-system.svc.cluster.local:8200"
+          - secret: VAULT_TOKEN
+            value: vault-chethiya-test-project-prd-read
+          - secret: CONSUL_TOKEN
+            value: consul-chethiya-test-project-prd-write
           - name: singlesignon_config
             value: "config/sso/prod.json"
           - name: mac_host
@@ -107,6 +111,8 @@ environments:
             value: "/v1/tenant/tag/{tag}"
           - name: TenantService_tenantByHawkIdPath
             value: "/v1/tenant/hawkId/{hawkId}"
+          - name: TenantService_keyByHawkIdPath
+            value: "/v1/authkey/hawkId/{hawkId}"
       - name: spring-app2
         external_url: chethiya-spring.prsn.io
         port: 80
