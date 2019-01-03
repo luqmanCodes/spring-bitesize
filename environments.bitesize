@@ -99,6 +99,8 @@ environments:
             value: "KernelApps"
           - name: userSession_defaultUserSessionLimit
             value: 5
+          - name: TEST123
+            value: 12
           - name: TenantService_url
             value: "http://tenants-api.us.pearson-intl.com"
           - name: TenantService_hawkId
