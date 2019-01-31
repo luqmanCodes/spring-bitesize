@@ -1,7 +1,7 @@
-project: chethiya-test-project
+project: chethiya
 environments:
   - name: Production
-    namespace: chethiya-test-project-prd
+    namespace: chethiya-prd
     deployment:
       method: rolling-upgrade
       mode: manual
