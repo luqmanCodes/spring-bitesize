@@ -14,17 +14,3 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "nfm"
-      - name: spring-app2
-        external_url: chethiya-spring.prsn.io
-        port: 80
-        replicas: 2
-        env:
-          - name: NODE_ENV
-            value: "paas"
-          - name: PAAS_ENV
-            value: "prod"
-          - name: NEW_ENV
-            value: 123456
-          - name: ABC
-            value: OOP
-        
