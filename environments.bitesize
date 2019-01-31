@@ -28,8 +28,9 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "nfm"  
-  - name: Development
-    namespace: chethiya-dev
+  - name: Perform
+    namespace: chethiya-prf
+    deployment:
       method: rolling-upgrade
     services:
       - name: spring-application
@@ -41,8 +42,23 @@ environments:
             value: "paas"
           - name: PAAS_ENV
             value: "nfm"
-  - name: Integration
+  - name: Qaint
     namespace: chethiya-qaint
+    deployment:
+      method: rolling-upgrade
+    services:
+      - name: spring-application
+        external_url: chethiya-spring.prsn.io
+        port: 80
+        replicas: 2
+        env:
+          - name: NODE_ENV
+            value: "paas"
+          - name: PAAS_ENV
+            value: "nfm"
+  - name: dev
+    namespace: chethiya-dev
+    deployment:
       method: rolling-upgrade
     services:
       - name: spring-application
