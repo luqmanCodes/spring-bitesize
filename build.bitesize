@@ -1,4 +1,4 @@
-project: chethiya-test-project
+project: chethiya
 components:
   - name: spring-application
     os: linux
