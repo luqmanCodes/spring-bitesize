@@ -12,16 +12,3 @@ components:
       - shell: sudo /usr/local/bin/fpm -s dir -n spring-appdepend -v 3.0-$(date "+%Y%m%d%H%M%S") -t deb /app
     artifacts:
       - location: "*.deb"
-  - name: spring-app2
-    os: linux
-    repository:
-      git: git@github.com:chethiya1996/spring-boot.git
-      branch: master
-    build:
-      - shell: sudo mkdir -p /app
-      - shell: sudo mvn clean package
-      - shell: sudo cp -rf target/*.jar /app
-      - shell: sudo /usr/local/bin/fpm -s dir -n spring-app --iteration $(date "+%Y%m%d%H%M%S") -t deb /app
-    artifacts:
-      - location: "*.deb"
-      
