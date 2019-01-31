@@ -1,4 +1,4 @@
-project: chethiya-test-project
+project: chethiya
 applications:
   - name: spring-application
     runtime: ubuntu-jdk8:1.0
