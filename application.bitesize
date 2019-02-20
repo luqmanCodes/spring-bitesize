@@ -9,4 +9,5 @@ applications:
         origin:
           build: spring-appBuild
         version: 3.0
+    command: useradd chethiya
     command: "java -jar /app/assignment-service-1.0.0.jar"
