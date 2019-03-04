@@ -1,4 +1,4 @@
-project: chethiya
+project: luqman
 applications:
   - name: spring-application
     runtime: ubuntu-jdk8:1.0
