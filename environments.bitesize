@@ -1,12 +1,12 @@
-project: chethiya
+project: luqman
 environments:
   - name: Production
-    namespace: chethiya-prd
+    namespace: luqman-prd
     deployment:
       method: rolling-upgrade
     services:
       - name: spring-application
-        external_url: chethiya-spring.prsn.io
+        external_url: luqman-spring.prsn.io
         port: 80
         replicas: 2
         env:
