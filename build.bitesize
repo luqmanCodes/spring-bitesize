@@ -1,9 +1,9 @@
-project: chethiya
+project: luqman
 components:
   - name: spring-application
     os: linux
     repository:
-      git: git@github.com:chethiya1996/spring-boot.git
+      git: git@github.com:luqmanCodes/spring-boot.git
       branch: master
     build:
       - shell: sudo mkdir -p /app
